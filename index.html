@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.B.I.T Mining</title>
+    <link rel="stylesheet" href="./css/style.min.css"><link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/icons/favicon/site.webmanifest">
+<link rel="mask-icon" href="./images/icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+  </head>
+  <body> 
+    <wrapper>
+      <canvas id="canvas"></canvas>
+      <div class="bg-wrap"></div>
+      <header class="header m-t-20 m-b-40">
+        <div class="container">
+          <div class="header__inner">
+            <button class="header__menu-button"><span> </span><span> </span><span> </span></button><a class="logo" href="/"><img src="./images/logo.svg" alt="Logo"></a>
+            <nav class="header__menu menu">
+              <div class="menu__contacts"> 
+                <div class="menu__social-media"><a class="menu__social-media-item" href="#" title="Мы в Facebook"> <img src="./images/icons/social-media/facebook.svg" alt="Facebook"></a><a class="menu__social-media-item" href="#" title="Мы на YouTube"> <img src="./images/icons/social-media/youtube.svg" alt="YouTube"></a><a class="menu__social-media-item" href="#" title="Мы в Instagram"> <img src="./images/icons/social-media/instagram.svg" alt="Instagram"></a><a class="menu__social-media-item" href="#" title="Мы в Telegram"> <img src="./images/icons/social-media/telegram.svg" alt="Telegram"></a></div>
+                <div class="menu__email"><img class="menu__email-icon" src="./images/icons/mail.svg" alt="Email" area-label="Написать нам на почту"><a class="menu__email-item" href="mailto:support@mining.com">support@mining.com</a><a class="menu__email-item" href="mailto:support@mining.com">support@mining.com</a></div>
+              </div>
+              <ul class="menu__list"> 
+                <li class="menu__list-item"><a href="#">Главная</a></li>
+                <li class="menu__list-item"><a href="#">Инвесторам</a></li>
+                <li class="menu__list-item"><a href="#">Faq</a></li>
+                <li class="menu__list-item"><a href="#">О нас</a></li>
+                <li class="menu__list-item"><a href="#">Правила</a></li>
+                <li class="menu__list-item"><a href="#">Контакты</a></li>
+                <li class="menu__list-item button small-button"><a href="#">Перейти в бот</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container-fluid">
+          <section class="preview">
+            <div class="container">
+              <div class="preview__main-info">
+                <h1 class="preview__title">ПЕРЕДОВОЙ КРИПТОДОБЫВАЮЩИЙ СЕРВИС</h1>
+                <p class="preview__subtitle">Инвестиции в собственный бизнес по добыче цифрового золота.</p><a class="preview__button button medium-button" href="#"> Зарегистрироваться</a>
+              </div>
+              <div class="preview__cards">
+                <div class="preview__cards-slider swiper m-b-60">
+                  <div class="preview__cards-container swiper-wrapper">
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Electrum asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1%</h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 10 до 3 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Electrum asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Advanced asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1,3% </h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 3000 до 10 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Advanced asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Digital Asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1,5% </h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 10 000 до 100 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Digital Asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Electrum asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1%</h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 10 до 3 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Electrum asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Advanced asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1,3% </h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 3000 до 10 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Advanced asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="preview__card-slide swiper-slide">
+                      <div class="preview__card">
+                        <div class="preview__card--front"><span class="preview__card-plate">Digital Asic</span><img src="./images/cards/bitcoin-machine.png" alt="Bitcoin Machine">
+                          <div class="preview__card-info">
+                            <h2 class="preview__card-percent title">1,5% </h2><span class="preview__card-days">на 100 дней</span>
+                            <p class="preview__card-info">от 10 000 до 100 000$ - тело депозита замораживается на 100 дней.</p>
+                          </div>
+                        </div>
+                        <div class="preview__card--back"><span class="preview__card-plate">Digital Asic</span><img src="./images/cards/chat-information.png" alt="Chat Information">
+                          <div class="preview__card-info">
+                            <ul class="preview__card-list"> 
+                              <li class="preview__card-list-item">Вывод депозита 1-30 дней - <strong>штраф 30%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 31-70 дней- <strong>штраф 20%</strong></li>
+                              <li class="preview__card-list-item">Вывод депозита 71-100 дней - <strong>штраф 10%</strong></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview__slider-button-prev swiper-button-prev"></div>
+                <div class="preview__slider-button-next swiper-button-next"></div>
+              </div>
+              <div class="preview__advantages m-b-45">
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Инстант</h5>
+                  <p class="preview__advantages-item-subtitle">(ручные, быстрые) выплаты</p>
+                </div>
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Реферальная программа</h5>
+                  <p class="preview__advantages-item-subtitle">имеет три уровня 7%, 3% и 1% </p>
+                </div>
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Тело депозита возвращается</h5>
+                  <p class="preview__advantages-item-subtitle">в конце срока инвестирования. </p>
+                </div>
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Порог входа от 10$</h5>
+                  <p class="preview__advantages-item-subtitle">и первая прибыль через 5-30 дней.</p>
+                </div>
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Процент дохода выше банка</h5>
+                  <p class="preview__advantages-item-subtitle">и других инвестиций.</p>
+                </div>
+                <div class="preview__advantages-item">
+                  <h5 class="preview__advantages-item-title">Простое ведение бизнеса</h5>
+                  <p class="preview__advantages-item-subtitle">Предоставим квалифицированную помощь.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="activity m-b-340">
+            <div class="container-fluid">
+              <div class="activity__decoration"> <img src="./images/decoration/blue-wave.svg" alt="Blue Wave"><img src="./images/decoration/medium-sphere-purple.svg" alt="Purple Sphere"><img src="./images/decoration/large-sphere-purple.svg" alt="Purple Sphere"></div>
+              <div class="container">
+                <div class="activity__inner">
+                  <div class="activity__images-container"> <img class="activity__image" src="./images/big-images/phone-crypto.png" alt="Telegram Bot on Phone with CryptoCoin"></div>
+                  <div class="activity__info">
+                    <h2 class="activity__title title">Деятельность компании</h2>
+                    <p class="activity__text">AS-BIT invest ведущая платформа для инвестирования в криптовалюту и ее добычу.<br>Отдельная экосистема объединяющая самые актуальные направления инвестирования в криптоиндустрии:</p>
+                    <ul class="activity__list">
+                      <li class="activity__list-item"><img src="./images/icons/trading-white.svg" alt="Trading"><span>
+                           <strong>Трейдинг</strong> - скальпинг криптовалют с использованием автоматизированных роботов.</span></li>
+                      <li class="activity__list-item"><img src="./images/icons/mining-white.svg" alt="Mining"><span>
+                           <strong>Майнинг</strong> - добыча Bitcoin с помощью asic в оборудованных дата центрах </span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="advantages m-b-150">
+            <div class="advantages__decoration"> <img src="./images/decoration/medium-sphere-white.svg" alt="White Sphere"></div>
+            <div class="container">
+              <div class="advantages__inner"> 
+                <h2 class="advantages__title title">Наши преимущества</h2>
+                <div class="advantages__grid"> 
+                  <div class="advantages__item">               <img src="./images/icons/advantages/money-house.svg" alt="Money House">
+                    <h4 class="advantages__item-title">Выгодно</h4>
+                    <p class="advantages__item-subtitle">Диверсификация рисков инвесторов за счет майнинга</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/horse-chess.svg" alt="Horse Chess">
+                    <h4 class="advantages__item-title">Профессионализм</h4>
+                    <p class="advantages__item-subtitle">За счет работы опытной команды профессионалов</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/money-shield.svg" alt="Money Shield">
+                    <h4 class="advantages__item-title">Прибыль и минимизация рисков</h4>
+                    <p class="advantages__item-subtitle">Трейдинг и диверсификация прибыли в майнинг позволяет сократить риски просадок и приносит значительный доход.</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/phone.svg" alt="Phone">
+                    <h4 class="advantages__item-title">Удобно и мобильно</h4>
+                    <p class="advantages__item-subtitle">Управление инвестициями с помощью мобильного телефона из любой точки мира, в простом интерфейсе телеграм бота.</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/rocket.svg" alt="Rocket">
+                    <h4 class="advantages__item-title">Доступность</h4>
+                    <p class="advantages__item-subtitle">Гибкие варианты инвестирования, сумма инвестиций от 10 $.</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/coins.svg" alt="Coins">
+                    <h4 class="advantages__item-title">Ежедневные выплаты</h4>
+                    <p class="advantages__item-subtitle">Вывод средств в любое время, согласно регламента.</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/comment.svg" alt="Comment">
+                    <h4 class="advantages__item-title">Техническая поддержка</h4>
+                    <p class="advantages__item-subtitle">В режиме онлайн, позволяет решать все вопросы мгновенно.</p>
+                  </div>
+                  <div class="advantages__item">               <img src="./images/icons/advantages/lock.svg" alt="Lock">
+                    <h4 class="advantages__item-title">Безопасность</h4>
+                    <p class="advantages__item-subtitle">Защита денежных средств от взломов и кибер атак внутри Telegram мессенджера.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="starting m-b-70">
+            <div class="starting__decoration"><img src="./images/decoration/large-sphere-white.svg" alt="White Sphere"></div>
+            <div class="container">
+              <div class="starting__inner"> 
+                <div class="starting__text">   
+                  <h2 class="starting__title title">Как начать работу?</h2>
+                  <p class="starting__subtitle">Всего три простых шага</p>
+                  <ol class="starting__steps"> 
+                    <li class="starting__step">Пройти быструю регистрацию, авторизовавшись в <a href="#">Telegram-боте</a></li>
+                    <li class="starting__step">Пополнить инвестиционный счет c помощью банковской карты, usdt, btc или qiwi</li>
+                    <li class="starting__step">Получать ежедневный доход, управлять депозитом в Telegram боте и выводить прибыль</li>
+                  </ol>
+                </div>
+                <div class="starting__images-container"><img src="./images/big-images/phone-database.png" alt=""></div>
+              </div>
+            </div>
+          </section>
+          <section class="simplicity m-b-120">
+            <div class="container"> 
+              <h2 class="simplicity__title title">Мы <span>сделали крипозаработок простым</span> как никогда!</h2>
+              <ol class="simplicity__list"> 
+                <li class="simplicity__list-item">Специальные знания<br> о криптовалютах Вам не потребуются</li>
+                <li class="simplicity__list-item">Потратить несколько минут в день для получения прибыли</li>
+                <li class="simplicity__list-item">Вы работаете только<br> в Telegram боте из любой точки Мира</li>
+              </ol>
+            </div>
+          </section>
+          <section class="referrals m-b-120">
+            <div class="container"> 
+              <div class="referrals__box"> 
+                <div class="referrals__info"> 
+                  <h2 class="referrals__title title">ПРИГЛАШАЙ ПАРТНЕРОВ И ЗАРАБАТЫВАЙ ВМЕСТЕ С НАМИ</h2>
+                  <p class="referrals__subtitle">Нашим партнерам мы предоставляем щедрое реферальное вознаграждение, имеющее три уровня в глубину.</p><a class="referrals__button button small-button" href="#"> Узнать подробнее</a>
+                </div>
+                <div class="referrals__images-container"><img src="./images/big-images/career-up.png" alt="Career Up"><span class="referrals__decoration-precent">1%</span><span class="referrals__decoration-precent">3%</span><span class="referrals__decoration-precent">7%</span></div>
+              </div>
+            </div>
+          </section>
+          <section class="guarantees m-b-120">
+            <div class="container">
+              <div class="guarantees__inner"> 
+                <h2 class="guarantees__title title">Обеспечение <span>доходности</span></h2>
+                <div class="guarantees__cards-box"> 
+                  <div class="guarantees__card"> 
+                    <h4 class="guarantees__card-title"><img src="./images/icons/trading.svg" alt="Trading">ТРЕЙДИНГ КРИПТОВАЛЮТ</h4>
+                    <div class="guarantees__card-text"> 
+                      <p>Является основным направлением деятельности компании AS-BIT – это вид торговли, суть которого заключается в заработке на перемене курсов виртуальных монет. </p>
+                      <p><strong>СКАЛЬПИНГ</strong> основная стратегия, по которой работают трейдеры нашей компании. Его также называют моментальной торговлей. </p>
+                      <p><strong>СМЫСЛ СКАЛЬПИНГА</strong> – в заработке на коротких торговых стратегиях, которая подходит для самых “переменчивых” монет. </p>
+                      <p><strong>ГЛАВНАЯ ЗАДАЧА СКАЛЬПЕРОВ</strong> – совершить максимально возможное количество краткосрочных сделок в течение торгового дня, чтобы в сумме получить значимый доход.</p>
+                    </div>
+                  </div>
+                  <div class="guarantees__card"> 
+                    <h4 class="guarantees__card-title"><img src="./images/icons/mining.svg" alt="Mining">Майнинг</h4>
+                    <div class="guarantees__card-text"> 
+                      <p><strong>ВКЛАДЫВАЯ В ДОБЫЧУ БИТКОИНА ВЫ ЗАРАБАТЫВАЕТЕ НА ДОБЫЧЕ ЦИФРОВОГО ЗОЛОТА.</strong></p>
+                      <p>Это круче, чем добывать нефть или газ, поскольку майнинг приносит солидный пассивный доход, обеспечивая при этом мобильность по всему миру. </p>
+                      <p><strong>BITCOIN САМАЯ ДОРОГАЯ МОНЕТА НА ПЛАНЕТЕ ЗЕМЛЯ.</strong></p>
+                      <p>Мы предлагаем возможность ощутить преимущества добычи криптоактивов, инвестируя в Майнинг. Вы исследуете прибыльный мир майнинга криптовалют, получите прибыль, внося свой вклад в рост экосистемы цифровых активов.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="about m-b-120">
+            <div class="container"> 
+              <div class="about__inner"> 
+                <div class="about__images-container"> <img src="./images/big-images/coin-database.png" alt="Coin Database"></div>
+                <div class="about__info"> 
+                  <h2 class="about__title title">О Компании</h2>
+                  <div class="about__text"> 
+                    <p><strong>Компания AS-BIT была основана крипто фаундером и его командой крито энтузиастов еще в 2019 году.</strong> Нашей целью с самого момента зарождения было получение максимальной прибыли и обеспечение стабильности в работе компании. Были открыты и запущены в работу современные Дата-центры и офисы в нескольких городах России и за ее пределами. В процессе активного поиска выгодной торговой стратегии нами была выбрана та, что повысила прибыльность и минимизировала риски. В 2022 году был запущен торговый бот, который автоматизировал процесс совершения сделок. В 2021-2022 годах наша команда показала отличный результат работы, что позволило расширить бизнес и запустить инвестиционный проект AS-BIT invest Company на основе Telegram-бота. </p>
+                    <p><strong>Мы можем предложить инвесторам самый надежный и выгодный вид инвестиций. Мы превращаем электричество в деньги и даем готовое инвест-решение.</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="faq m-b-120">
+            <div class="faq__decoration"> <img src="./images/decoration/small-sphere-white.svg" alt="White Sphere"></div>
+            <div class="container"> 
+              <div class="faq__inner"> 
+                <h2 class="faq__title title">FAQ и правила</h2>
+                <div class="faq__dropdown-box">
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Как стать участником программы?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Что делать если я не имею кошельков в электронных системах, которые принимает проект?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Как мне открыть аккаунт в проекте название?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Какие платёжные системы принимает программа?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Как я могу вывести свои деньги?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Мне не приходят деньги на ЭПС, что делать?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Через какое время мой депозит будет зачислен?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Когда я могу получить прибыль?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Могу я сделать реинвест с баланса?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Как мне сделать депозит?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Я могу сделать несколько депозитов?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Есть ли комиссия на вывод?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Могу ли я открыть несколько аккаунтов в проекте?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Когда я могу проверить свой аккаунт?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Какая сумма минимальной выплаты в проекте?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a></div>
+                  </div>
+                  <div class="faq__dropdown">
+                    <div class="faq__dropdown-title">Сколько составляет реферальное вознаграждение?</div>
+                    <div class="faq__dropdown-content">Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>         </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="output-methods"> 
+            <div class="container">
+              <div class="output-methods__inner"> 
+                <div class="output-methods__item"><img src="./images/output-methods/bitcoin.svg" alt="Bitcoin"></div>
+                <div class="output-methods__item"><img src="./images/output-methods/ethereum.svg" alt="Ethereum"></div>
+                <div class="output-methods__item"><img src="./images/output-methods/tether.svg" alt="Tether"></div>
+                <div class="output-methods__item"><img src="./images/output-methods/tron.svg" alt="TRON"></div>
+                <div class="output-methods__item"><img src="./images/output-methods/payeer.svg" alt="PAYEER"></div>
+                <div class="output-methods__item"><img src="./images/output-methods/paypal.svg" alt="PayPal"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer p-b-200 m-t-140">
+        <div class="container">
+          <div class="footer__inner"> 
+            <nav class="footer__menu menu">
+              <ul class="menu__list"> 
+                <li class="menu__list-item"><a href="#">Главная</a></li>
+                <li class="menu__list-item"><a href="#">Инвесторам</a></li>
+                <li class="menu__list-item"><a href="#">Faq</a></li>
+                <li class="menu__list-item"><a href="#">О нас</a></li>
+                <li class="menu__list-item"><a href="#">Правила</a></li>
+                <li class="menu__list-item"><a href="#">Контакты</a></li>
+              </ul>
+              <div class="menu__contacts"> 
+                <div class="menu__social-media"><a class="menu__social-media-item" href="#" title="Мы в Facebook"> <img src="./images/icons/social-media/facebook.svg" alt="Facebook"></a><a class="menu__social-media-item" href="#" title="Мы на YouTube"> <img src="./images/icons/social-media/youtube.svg" alt="YouTube"></a><a class="menu__social-media-item" href="#" title="Мы в Instagram"> <img src="./images/icons/social-media/instagram.svg" alt="Instagram"></a><a class="menu__social-media-item" href="#" title="Мы в Telegram"> <img src="./images/icons/social-media/telegram.svg" alt="Telegram"></a></div>
+                <div class="menu__email"><a class="menu__email-item" href="mailto:support@mining.com">support@mining.com</a><a class="menu__email-item" href="mailto:support@mining.com">support@mining.com</a></div>
+              </div>
+            </nav><a class="footer__button button medium-button" href="#">Зарегистрироватся</a>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/main.min.js"></script>
+    </wrapper>
+  </body>
+</html>
