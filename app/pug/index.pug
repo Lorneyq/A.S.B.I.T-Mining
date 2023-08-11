@@ -1,0 +1,347 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title A.S.B.I.T Mining
+        link(rel="stylesheet", href="./css/style.min.css")
+        include layout/favicon
+    body 
+        wrapper
+            canvas#canvas
+            .bg-wrap
+            include layout/header
+            main.main
+                .container-fluid
+                    section.preview
+                        .container
+                            .preview__main-info
+                                h1.preview__title ПЕРЕДОВОЙ КРИПТОДОБЫВАЮЩИЙ СЕРВИС
+                                p.preview__subtitle Инвестиции в собственный бизнес по добыче цифрового золота.
+                                a.preview__button.button.medium-button(href="#")  Зарегистрироваться
+                            .preview__cards
+                                .preview__cards-slider.swiper.m-b-60
+                                    .preview__cards-container.swiper-wrapper
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Electrum asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1%
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 10 до 3 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Electrum asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Advanced asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1,3% 
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 3000 до 10 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Advanced asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Digital Asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1,5% 
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 10 000 до 100 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Digital Asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Electrum asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1%
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 10 до 3 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Electrum asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Advanced asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1,3% 
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 3000 до 10 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Advanced asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                        .preview__card-slide.swiper-slide
+                                            .preview__card
+                                                .preview__card--front
+                                                    span.preview__card-plate Digital Asic
+                                                    img(src="./images/cards/bitcoin-machine.png", alt="Bitcoin Machine")
+                                                    .preview__card-info
+                                                        h2.preview__card-percent.title 1,5% 
+                                                        span.preview__card-days на 100 дней
+                                                        p.preview__card-info от 10 000 до 100 000$ - тело депозита замораживается на 100 дней.
+                                                .preview__card--back
+                                                    span.preview__card-plate Digital Asic
+                                                    img(src="./images/cards/chat-information.png", alt="Chat Information")
+                                                    .preview__card-info
+                                                        ul.preview__card-list 
+                                                            li.preview__card-list-item Вывод депозита 1-30 дней - <strong>штраф 30%</strong>
+                                                            li.preview__card-list-item Вывод депозита 31-70 дней- <strong>штраф 20%</strong>
+                                                            li.preview__card-list-item Вывод депозита 71-100 дней - <strong>штраф 10%</strong>
+                                .preview__slider-button-prev.swiper-button-prev
+                                .preview__slider-button-next.swiper-button-next
+                            .preview__advantages.m-b-45
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Инстант
+                                    p.preview__advantages-item-subtitle (ручные, быстрые) выплаты
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Реферальная программа
+                                    p.preview__advantages-item-subtitle имеет три уровня 7%, 3% и 1% 
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Тело депозита возвращается
+                                    p.preview__advantages-item-subtitle в конце срока инвестирования. 
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Порог входа от 10$
+                                    p.preview__advantages-item-subtitle и первая прибыль через 5-30 дней.
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Процент дохода выше банка
+                                    p.preview__advantages-item-subtitle и других инвестиций.
+                                .preview__advantages-item
+                                    h5.preview__advantages-item-title Простое ведение бизнеса
+                                    p.preview__advantages-item-subtitle Предоставим квалифицированную помощь.
+                    section.activity.m-b-340
+                        .container-fluid
+                            .activity__decoration 
+                                img(src="./images/decoration/blue-wave.svg", alt="Blue Wave")
+                                img(src="./images/decoration/medium-sphere-purple.svg", alt="Purple Sphere")
+                                img(src="./images/decoration/large-sphere-purple.svg", alt="Purple Sphere")
+                            .container
+                                .activity__inner
+                                    .activity__images-container 
+                                        img.activity__image(src="./images/big-images/phone-crypto.png", alt="Telegram Bot on Phone with CryptoCoin")
+                                    .activity__info
+                                        h2.activity__title.title Деятельность компании
+                                        p.activity__text AS-BIT invest ведущая платформа для инвестирования в криптовалюту и ее добычу.<br>Отдельная экосистема объединяющая самые актуальные направления инвестирования в криптоиндустрии:
+                                        ul.activity__list
+                                            li.activity__list-item
+                                                img(src="./images/icons/trading-white.svg", alt="Trading")
+                                                span 
+                                                    <strong>Трейдинг</strong> - скальпинг криптовалют с использованием автоматизированных роботов.
+                                            li.activity__list-item
+                                                img(src="./images/icons/mining-white.svg", alt="Mining")
+                                                span 
+                                                    <strong>Майнинг</strong> - добыча Bitcoin с помощью asic в оборудованных дата центрах 
+                    section.advantages.m-b-150
+                        .advantages__decoration 
+                            img(src="./images/decoration/medium-sphere-white.svg", alt="White Sphere")
+                        .container
+                            .advantages__inner 
+                                h2.advantages__title.title Наши преимущества
+                                .advantages__grid 
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/money-house.svg", alt="Money House")
+                                        h4.advantages__item-title Выгодно
+                                        p.advantages__item-subtitle Диверсификация рисков инвесторов за счет майнинга
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/horse-chess.svg", alt="Horse Chess")
+                                        h4.advantages__item-title Профессионализм
+                                        p.advantages__item-subtitle За счет работы опытной команды профессионалов
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/money-shield.svg", alt="Money Shield")
+                                        h4.advantages__item-title Прибыль и минимизация рисков
+                                        p.advantages__item-subtitle Трейдинг и диверсификация прибыли в майнинг позволяет сократить риски просадок и приносит значительный доход.
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/phone.svg", alt="Phone")
+                                        h4.advantages__item-title Удобно и мобильно
+                                        p.advantages__item-subtitle Управление инвестициями с помощью мобильного телефона из любой точки мира, в простом интерфейсе телеграм бота.
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/rocket.svg", alt="Rocket")
+                                        h4.advantages__item-title Доступность
+                                        p.advantages__item-subtitle Гибкие варианты инвестирования, сумма инвестиций от 10 $.
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/coins.svg", alt="Coins")
+                                        h4.advantages__item-title Ежедневные выплаты
+                                        p.advantages__item-subtitle Вывод средств в любое время, согласно регламента.
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/comment.svg", alt="Comment")
+                                        h4.advantages__item-title Техническая поддержка
+                                        p.advantages__item-subtitle В режиме онлайн, позволяет решать все вопросы мгновенно.
+                                    .advantages__item                
+                                        img(src="./images/icons/advantages/lock.svg", alt="Lock")
+                                        h4.advantages__item-title Безопасность
+                                        p.advantages__item-subtitle Защита денежных средств от взломов и кибер атак внутри Telegram мессенджера.
+                    section.starting.m-b-70
+                        .starting__decoration
+                            img(src="./images/decoration/large-sphere-white.svg", alt="White Sphere")
+                        .container
+                            .starting__inner 
+                                .starting__text    
+                                    h2.starting__title.title Как начать работу?
+                                    p.starting__subtitle Всего три простых шага
+                                    ol.starting__steps 
+                                        li.starting__step Пройти быструю регистрацию, авторизовавшись в <a href="#">Telegram-боте</a>
+                                        li.starting__step Пополнить инвестиционный счет c помощью банковской карты, usdt, btc или qiwi
+                                        li.starting__step Получать ежедневный доход, управлять депозитом в Telegram боте и выводить прибыль
+                                .starting__images-container
+                                    img(src="./images/big-images/phone-database.png", alt="")
+                    section.simplicity.m-b-120
+                        .container 
+                            h2.simplicity__title.title Мы <span>сделали крипозаработок простым</span> как никогда!
+                            ol.simplicity__list 
+                                li.simplicity__list-item Специальные знания<br> о криптовалютах Вам не потребуются
+                                li.simplicity__list-item Потратить несколько минут в день для получения прибыли
+                                li.simplicity__list-item Вы работаете только<br> в Telegram боте из любой точки Мира
+                    section.referrals.m-b-120
+                        .container 
+                            .referrals__box 
+                                .referrals__info 
+                                    h2.referrals__title.title ПРИГЛАШАЙ ПАРТНЕРОВ И ЗАРАБАТЫВАЙ ВМЕСТЕ С НАМИ
+                                    p.referrals__subtitle Нашим партнерам мы предоставляем щедрое реферальное вознаграждение, имеющее три уровня в глубину.
+                                    a.referrals__button.button.small-button(href="#")  Узнать подробнее
+                                .referrals__images-container
+                                    img(src="./images/big-images/career-up.png", alt="Career Up")
+                                    span.referrals__decoration-precent 1%
+                                    span.referrals__decoration-precent 3%
+                                    span.referrals__decoration-precent 7%
+                    section.guarantees.m-b-120
+                        .container
+                            .guarantees__inner 
+                                h2.guarantees__title.title Обеспечение <span>доходности</span>
+                                .guarantees__cards-box 
+                                    .guarantees__card 
+                                        h4.guarantees__card-title
+                                            img(src="./images/icons/trading.svg", alt="Trading")
+                                            | ТРЕЙДИНГ КРИПТОВАЛЮТ
+                                        .guarantees__card-text 
+                                            p Является основным направлением деятельности компании AS-BIT – это вид торговли, суть которого заключается в заработке на перемене курсов виртуальных монет. 
+                                            p <strong>СКАЛЬПИНГ</strong> основная стратегия, по которой работают трейдеры нашей компании. Его также называют моментальной торговлей. 
+                                            p <strong>СМЫСЛ СКАЛЬПИНГА</strong> – в заработке на коротких торговых стратегиях, которая подходит для самых “переменчивых” монет. 
+                                            p <strong>ГЛАВНАЯ ЗАДАЧА СКАЛЬПЕРОВ</strong> – совершить максимально возможное количество краткосрочных сделок в течение торгового дня, чтобы в сумме получить значимый доход.
+                                    .guarantees__card 
+                                        h4.guarantees__card-title
+                                            img(src="./images/icons/mining.svg", alt="Mining")
+                                            | Майнинг
+                                        .guarantees__card-text 
+                                            p <strong>ВКЛАДЫВАЯ В ДОБЫЧУ БИТКОИНА ВЫ ЗАРАБАТЫВАЕТЕ НА ДОБЫЧЕ ЦИФРОВОГО ЗОЛОТА.</strong>
+                                            p Это круче, чем добывать нефть или газ, поскольку майнинг приносит солидный пассивный доход, обеспечивая при этом мобильность по всему миру. 
+                                            p <strong>BITCOIN САМАЯ ДОРОГАЯ МОНЕТА НА ПЛАНЕТЕ ЗЕМЛЯ.</strong>
+                                            p Мы предлагаем возможность ощутить преимущества добычи криптоактивов, инвестируя в Майнинг. Вы исследуете прибыльный мир майнинга криптовалют, получите прибыль, внося свой вклад в рост экосистемы цифровых активов.
+                    section.about.m-b-120
+                        .container 
+                            .about__inner 
+                                .about__images-container 
+                                    img(src="./images/big-images/coin-database.png", alt="Coin Database")
+                                .about__info 
+                                    h2.about__title.title О Компании
+                                    .about__text 
+                                        p <strong>Компания AS-BIT была основана крипто фаундером и его командой крито энтузиастов еще в 2019 году.</strong> Нашей целью с самого момента зарождения было получение максимальной прибыли и обеспечение стабильности в работе компании. Были открыты и запущены в работу современные Дата-центры и офисы в нескольких городах России и за ее пределами. В процессе активного поиска выгодной торговой стратегии нами была выбрана та, что повысила прибыльность и минимизировала риски. В 2022 году был запущен торговый бот, который автоматизировал процесс совершения сделок. В 2021-2022 годах наша команда показала отличный результат работы, что позволило расширить бизнес и запустить инвестиционный проект AS-BIT invest Company на основе Telegram-бота. 
+                                        p <strong>Мы можем предложить инвесторам самый надежный и выгодный вид инвестиций. Мы превращаем электричество в деньги и даем готовое инвест-решение.</strong>
+                    section.faq.m-b-120
+                        .faq__decoration 
+                                img(src="./images/decoration/small-sphere-white.svg", alt="White Sphere")
+                        .container 
+                            .faq__inner 
+                                h2.faq__title.title FAQ и правила
+                                .faq__dropdown-box
+                                    .faq__dropdown
+                                        .faq__dropdown-title Как стать участником программы?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Что делать если я не имею кошельков в электронных системах, которые принимает проект?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Как мне открыть аккаунт в проекте название?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Какие платёжные системы принимает программа?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Как я могу вывести свои деньги?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Мне не приходят деньги на ЭПС, что делать?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Через какое время мой депозит будет зачислен?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Когда я могу получить прибыль?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Могу я сделать реинвест с баланса?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Как мне сделать депозит?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Я могу сделать несколько депозитов?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Есть ли комиссия на вывод?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Могу ли я открыть несколько аккаунтов в проекте?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Когда я могу проверить свой аккаунт?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Какая сумма минимальной выплаты в проекте?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>
+                                    .faq__dropdown
+                                        .faq__dropdown-title Сколько составляет реферальное вознаграждение?
+                                        .faq__dropdown-content Для участия в проекте необходимо пройти по ссылке и присоединиться к <a href="#">Telegram-боту.</a>         
+                    .output-methods 
+                        .container
+                            .output-methods__inner 
+                                .output-methods__item
+                                    img(src="./images/output-methods/bitcoin.svg", alt="Bitcoin")
+                                .output-methods__item
+                                    img(src="./images/output-methods/ethereum.svg", alt="Ethereum")
+                                .output-methods__item
+                                    img(src="./images/output-methods/tether.svg", alt="Tether")
+                                .output-methods__item
+                                    img(src="./images/output-methods/tron.svg", alt="TRON")
+                                .output-methods__item
+                                    img(src="./images/output-methods/payeer.svg", alt="PAYEER")
+                                .output-methods__item
+                                    img(src="./images/output-methods/paypal.svg", alt="PayPal")
+            include layout/footer
+            script(src="./js/main.min.js")
