@@ -43,4 +43,4 @@ That's it, the whole project is up and running. Congratulations!🎉🥳
 
 👉[Live demo](https://a-s-b-i-t-mining.vercel.app/)
 
-![Corgo Course demo](https://lorneyq.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fasbt-mining.3efaae7e.jpg&w=1920&q=75)
+![Corgo Course demo](https://api-lorneyq.online/media/projects/asbt-mining.jpg)
